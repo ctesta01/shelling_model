@@ -1,6 +1,6 @@
 # Shelling's Model of Segregation
 
-Shelling's Segregation Model is demonstrates how small-scale individual preferences can lead to large-scale societal segregation. The model was introduced by Thomas Schelling in his 1971 paper ["Dynamic Models of Segregation" (Journal of Mathematical Sociology)](https://www.tandfonline.com/doi/abs/10.1080/0022250X.1971.9989794).
+Shelling's Segregation Model demonstrates how small-scale individual preferences can lead to large-scale societal segregation. The model was introduced by Thomas Schelling in his 1971 paper ["Dynamic Models of Segregation" (Journal of Mathematical Sociology)](https://www.tandfonline.com/doi/abs/10.1080/0022250X.1971.9989794).
 
 It's an agent-based model, where agents (representing individuals or families) of two different types (e.g., races, religions) inhabit a grid. They prefer to move if less than a certain proportion of their neighbors are of the same type, leading to emergent segregation over time.
 
