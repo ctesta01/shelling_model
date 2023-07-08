@@ -59,7 +59,7 @@ plot_grid <- function(grid, frame) {
     scale_fill_manual(values = c("white", "#54a0ff", "#ff9f43"),
       labels = c("Empty", "Race 1", "Race 2")) +
     theme_void() +
-    theme(legend.position = "right", plot.caption.position = 'plot', plot.caption = element_text(hjust = .5)) +
+    theme(legend.position = "right", plot.caption.position = 'plot', plot.caption = element_text(hjust = .5), legend.key=element_rect(color='black')) +
     labs(fill = "") +
     coord_equal() + 
     ggtitle("Shelling's Model of Segregation",
@@ -84,4 +84,3 @@ run_simulation <- function() {
 
 # Run the simulation
 run_simulation()
-
