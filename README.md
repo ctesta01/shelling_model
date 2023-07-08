@@ -14,9 +14,9 @@ The output is rendered to static image files and rendered to mp4 and gif format 
 
 ### My Caveats 
 
-I think it's worth noting here that I think a substantial fraction of segregation *is* structural and not due to individual preferences.  We know that the US has a long history of redlining [1](https://ncrc.org/holc-health/), [2](https://www.theguardian.com/us-news/2022/mar/09/redlining-air-pollution-us-cities), [Jim Crow](https://en.wikipedia.org/wiki/Jim_Crow_laws) and slavery, and [the racial segregation of American cities was anything but accidental](https://www.smithsonianmag.com/history/how-federal-government-intentionally-racially-segregated-american-cities-180963494/). 
+I think it's worth noting here that I think a substantial fraction of segregation *is* structural and not due to individual preferences.  We know that the US has a long history of redlining [[1]](https://ncrc.org/holc-health/), [[2]](https://www.theguardian.com/us-news/2022/mar/09/redlining-air-pollution-us-cities), [Jim Crow](https://en.wikipedia.org/wiki/Jim_Crow_laws) and slavery, and [the racial segregation of American cities was anything but accidental](https://www.smithsonianmag.com/history/how-federal-government-intentionally-racially-segregated-american-cities-180963494/). 
 
-The point of writing this code and animating it isn't to advocate for the beliefs and assumptions posited within Shelling's model, but rather to a) share code of b) a relatively simple spatial (pixel-based) agent-based model, that can be c) animated for the benefit of folks interested in rendering these kinds of animations and to hone my skills. 
+The point of writing this code and animating it isn't to advocate for the beliefs and assumptions posited within Shelling's model, but rather to share code of a relatively simple spatial (pixel-based) agent-based model, that can be animated for the benefit of folks interested in rendering these kinds of animations and to hone my skills. 
 
 ### Interesting Relevant Literature
 
