@@ -19,7 +19,7 @@ initialize_grid <- function() {
 
 # for a given x,y coordinate, count the number of similar neighbors
 count_similar <- function(grid, x, y) {
-  race <- grid[x, y]
+  species <- grid[x, y]
   similar <- 0
   total <- 0
   for (dx in -1:1) { # look one left and one right
@@ -29,7 +29,7 @@ count_similar <- function(grid, x, y) {
       # if considering a valid coordinate
       if (nx >= 1 && nx <= grid_size && ny >= 1 && ny <= grid_size && !(dx == 0 && dy == 0) && grid[nx, ny] != 0) {
         total <- total + 1
-        similar <- similar + (grid[nx, ny] == race)
+        similar <- similar + (grid[nx, ny] == species)
       }
     }
   }
@@ -66,18 +66,18 @@ update_grid <- function(grid) {
 
 # produce and save a ggplot showing the grid 
 plot_grid <- function(grid, frame) {
-  df <- data.frame(expand.grid(x = 1:grid_size, y = 1:grid_size), race = as.factor(c(grid)))
-  p <- ggplot(df, aes(x = x, y = y, fill = race)) +
+  df <- data.frame(expand.grid(x = 1:grid_size, y = 1:grid_size), species = as.factor(c(grid)))
+  p <- ggplot(df, aes(x = x, y = y, fill = species)) +
     geom_tile() +
     scale_fill_manual(values = c("white", "#54a0ff", "#ff9f43"),
-      labels = c("Empty", "Race 1", "Race 2")) +
+      labels = c("Empty", "species 1", "species 2")) +
     theme_void() +
     theme(legend.position = "right", plot.caption.position = 'plot', plot.caption = element_text(hjust = .5), legend.key=element_rect(color='black')) +
     labs(fill = "") +
     coord_equal() + 
     ggtitle("Shelling's Model of Segregation",
     "Tolerance Threshold: .70") + 
-    labs(caption = stringr::str_wrap('Agents move to random empty spots if less than 70% of their neighbors are of the same race, leading to segregation.', 60))
+    labs(caption = stringr::str_wrap('Agents move to random empty spots if less than 70% of their neighbors are of the same species, leading to segregation.', 60))
   
   ggsave(sprintf("frame%03d.png", frame), p, width=500, height=300, unit='px', scale=3)
 }
